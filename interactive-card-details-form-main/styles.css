@@ -1,160 +1,174 @@
 :root {
-    --field-txt-color: #929292;
-    --form-btn-bg-color: #220930;
+  --field-txt-color: #929292;
+  --form-btn-bg-color: #220930;
 }
-
-
 
 body {
-    display: flex;
+  display: flex;
 }
-
 
 .gradient-wrap img {
-    height: 100vh; /* Add this line */
+  height: 100vh; /* Add this line */
 }
 
-
 .image-content-wrap {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    width: 500px;
-    height: 500px;
-    display: flex;
-    background: red;
-    flex-direction: column;
-    justify-content: space-around;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 500px;
+  height: 550px;
+  /* height: 500px; */
+  display: flex;
+  /* background: red; */
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .image-content-wrap img {
-   height: 220px;
+  height: 220px;
 }
 
 .card-images.ci2 {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 .content-form-wrap {
-    /* background: red; */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* background: red; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ui.form.segment {
-    width: 450px;
-    height: 450px;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: none;
-    box-shadow: none;
+  width: 450px;
+  height: 450px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  box-shadow: none;
 }
 
-.ui.blue.button, .ui.blue.buttons .button {
-    /* background-color: #2185d0; */
-    background: var(--form-btn-bg-color);
-    color: #fff;
-    text-shadow: none;
-    background-image: none;
-    height: 45px;
-
+.ui.blue.button,
+.ui.blue.buttons .button {
+  /* background-color: #2185d0; */
+  background: var(--form-btn-bg-color);
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+  height: 45px;
 }
 
 /* button {
     background: #220930;
 } */
 
-.ui.form .field>label {
-    display: block;
-    margin: 0 0 .28571429rem 0;
-    color: var(--field-txt-color);
-    font-size: .92857143em;
-    font-weight: 700;
-    text-transform: none;
+.ui.form .field > label {
+  display: block;
+  margin: 0 0 0.28571429rem 0;
+  color: var(--field-txt-color);
+  font-size: 0.92857143em;
+  font-weight: 700;
+  text-transform: none;
 }
 
-
 .field {
-    /* height: 90px; */
-    height: 70px;
-    /* background: red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* justify-content: space-around; */
+  /* height: 90px; */
+  height: 70px;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
 }
 
 .field label {
-   margin: 0;
+  margin: 0;
 }
 
 .field input {
-    margin: 0;
-   height: 45px;
+  margin: 0;
+  height: 45px;
 }
 
-
 .card-images.ci1 {
-    background: url('./images/bg-card-front.png') no-repeat center center;
-    background-size: cover;
-    position: relative;
-    height: 220px;
-    width: 390px;
-    border-radius: 10px;
-  }
-  
-  .circles {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .circle-fill {
-    width: 20px; /* Adjust as needed */
-    height: 20px; /* Adjust as needed */
-    background: white;
-    border-radius: 50%;
-  }
-  
-  .circle-outline {
-    width: 15px; /* Adjust as needed */
-    height: 15px; /* Adjust as needed */
-    border: 2px solid white;
-    border-radius: 50%;
-  }
-  
-  .card-number, .card-holder, .card-expiry {
-    color: white;
-    /* Add other styles as needed */
-  }
+  background: url("./images/bg-card-front.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 220px;
+  width: 390px;
+  border-radius: 10px;
+}
 
-  .card-number {
-    position: relative;
-    top: 50%;
-    /* font-size: 22px; */
-    font-size: 30px;
-    display: flex;
-    /* background: yellow; */
-    justify-content: space-around;
-    width: 100%;
-  }
+.circles {
+  position: absolute;
+  top: 15px;
+  left: 15%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+}
 
-  .card-holder {
-    position: relative;
-    top: 47%;
-    left: 5%;
+.circle-fill {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+}
+
+.circle-outline {
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.card-number,
+.card-holder,
+.card-expiry {
+  color: white;
+  /* Add other styles as needed */
+}
+
+.card-number {
+  position: relative;
+  top: 50%;
+  /* font-size: 22px; */
+  font-size: 30px;
+  display: flex;
+  /* background: yellow; */
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card-holder {
+  position: relative;
+  top: 47%;
+  left: 5%;
 }
 
 .card-expiry {
-    position: relative;
-    top: 32%;
-    left: 85%;
+  position: relative;
+  top: 32%;
+  left: 85%;
+}
+
+.cvc-elm {
+  /* position: relative;
+    bottom: 27.5%;
+    left: 80%;
+    color: white;
+    width: fit-content;
+    font-size: 15px; */
+
+  position: relative;
+  bottom: 28.5%;
+  left: 78%;
+  color: white;
+  width: fit-content;
+  font-size: 20px;
 }

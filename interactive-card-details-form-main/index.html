@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
-  <link rel="stylesheet" href="./styles.css">
-  <title>Intercative Card</title>
-</head>
-<body>
-  
-<div class="gradient-wrap">
-<img src="./images/bg-main-desktop.png" alt="">
-</div>
-
-
-<!-- card images section -->
-<div class="image-content-wrap">
-  <div class="card-images ci1">
-    <div class="circles">
-      <div class="circle-fill"></div>
-      <div class="circle-outline"></div>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Intercative Card</title>
+  </head>
+  <body>
+    <div class="gradient-wrap">
+      <img src="./images/bg-main-desktop.png" alt="" />
     </div>
-    <p class="card-number">0000  0000  0000  0000</p>
-    <p class="card-holder">Card Holder</p>
-    <p class="card-expiry">00/00</p>
-  </div>
-  <div class="card-images ci2">
-   <img src="./images/bg-card-back.png" alt="card_back">
-  </div>
-</div>
 
-
-<!-- Form content section -->
-<div class="content-form-wrap">
-  <div class="ui form segment">
-    <div class="field">
-      <label>CARDHOLDER NAME</label>
-      <input type="text" name="card-holder" placeholder="Card Holder">
-    </div>
-    <div class="field">
-      <label>CARD NUMBER</label> <!-- Corrected label here -->
-      <input type="text" name="card-number" placeholder="Card Number">
-    </div>
-    <div class="two fields">
-      <div class="field">
-        <label>Exp. Date (MM/YY)</label>
-        <input type="text" name="expiry-date" placeholder="MM/YY">
+    <!-- card images section -->
+    <div class="image-content-wrap">
+      <div class="card-images ci1">
+        <div class="circles">
+          <div class="circle-fill"></div>
+          <div class="circle-outline"></div>
+        </div>
+        <p class="card-number">0000 0000 0000 0000</p>
+        <p class="card-holder">Card Holder</p>
+        <p class="card-expiry">00/00</p>
       </div>
-      <div class="field">
-        <label>CVC</label>
-        <input type="text" name="cvc" placeholder="CVC">
+      <div class="card-images ci2">
+        <img src="./images/bg-card-back.png" alt="card_back" />
+      </div>
+      <p class="cvc-elm">000</p>
+    </div>
+
+    <!-- Form content section -->
+    <div class="content-form-wrap">
+      <div class="ui form segment">
+        <div class="field">
+          <label>CARDHOLDER NAME</label>
+          <input type="text" name="card-holder" placeholder="Card Holder" />
+        </div>
+        <div class="field">
+          <label>CARD NUMBER</label>
+          <!-- Corrected label here -->
+          <input type="text" name="card-number" placeholder="Card Number" />
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>Exp. Date (MM/YY)</label>
+            <input type="text" name="expiry-date" placeholder="MM/YY" />
+          </div>
+          <div class="field">
+            <label>CVC</label>
+            <input type="text" name="cvc" placeholder="CVC" />
+          </div>
+        </div>
+        <button class="ui blue submit button" type="submit">Confirm</button>
       </div>
     </div>
-    <button class="ui blue submit button" type="submit">Confirm</button>
-  </div>
-</div>
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
