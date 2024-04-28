@@ -24,7 +24,7 @@
         </div>
         <p class="card-number">0000 0000 0000 0000</p>
         <p class="card-holder">Card Holder</p>
-        <p class="card-expiry">00/00</p>
+        <p class="card-expiry"><span class="spn-l-nums">00</span>/<span class="spn-r-nums">00</span></p>
       </div>
       <div class="card-images ci2">
         <img src="./images/bg-card-back.png" alt="card_back" />
@@ -37,26 +37,27 @@
       <div class="ui form segment">
         <div class="field">
           <label>CARDHOLDER NAME</label>
-          <input type="text" name="card-holder" placeholder="Card Holder" />
+          <input id="card-holder" type="text" name="card-holder" placeholder="Card Holder" />
         </div>
         <div class="field">
           <label>CARD NUMBER</label>
           <!-- Corrected label here -->
-          <input type="text" name="card-number" placeholder="Card Number" />
+          <input id="card-number" type="text" name="card-number" placeholder="Card Number" />
         </div>
         <div class="two fields">
           <div class="field">
             <label>Exp. Date (MM/YY)</label>
-            <input type="text" name="expiry-date" placeholder="MM/YY" />
+            <input id="exp_Date" type="text" name="expiry-date" placeholder="MM/YY" />
           </div>
           <div class="field">
             <label>CVC</label>
-            <input type="text" name="cvc" placeholder="CVC" />
+            <input id="cvc-elms"  type="text" name="cvc" placeholder="CVC" />
           </div>
         </div>
         <button class="ui blue submit button" type="submit">Confirm</button>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
