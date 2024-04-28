@@ -182,7 +182,7 @@ body {
 }
 
 
-@media only screen and (min-width: 301px) and (max-width: 1000px) {
+@media only screen and (min-width: 301px) and (max-width: 700px) {
     body {
         display: flex;
         flex-direction: column;
@@ -201,6 +201,10 @@ body {
         /* background: red; */
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .gradient-wrap {
+        margin-bottom: 60px;
     }
 
     .gradient-wrap img {
@@ -234,11 +238,21 @@ body {
     }
 
     .card-images.ci1 {
-        background: url(./images/bg-card-front.png) no-repeat center center;
+        /* background: url(./images/bg-card-front.png) no-repeat center center;
         background-size: cover;
         position: relative;
         height: 200px;
         width: 90%;
+        top: 20%;
+        border-radius: 10px;
+        z-index: 1; */
+
+
+        background: url(./images/bg-card-front.png) no-repeat center center;
+        background-size: cover;
+        position: relative;
+        height: 180px;
+        width: 320px;
         top: 20%;
         border-radius: 10px;
         z-index: 1;
@@ -259,11 +273,13 @@ body {
     }
 
     .image-content-wrap img {
+        /* height: 180px; */
         height: 180px;
+        width: 320px;
         position: relative;
         bottom: 186%;
-        left: -24%;
-        top: -145%;
+                left: -9%;
+                top: -142%;
     }
 
     .cvc-elm {
