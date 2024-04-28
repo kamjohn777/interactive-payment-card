@@ -37,6 +37,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -171,4 +172,11 @@ body {
   color: white;
   width: fit-content;
   font-size: 20px;
+}
+
+
+/* Add CSS to style the error message */
+.error-message {
+    color: red;
+    font-size: 12px;
 }

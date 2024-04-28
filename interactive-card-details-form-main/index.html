@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Intercative Card</title>
+    <title>Interactive Card</title>
   </head>
   <body>
     <div class="gradient-wrap">
-      <img src="./images/bg-main-desktop.png" alt="" />
+      <img src="./images/bg-main-desktop.png" alt="Background" />
     </div>
 
     <!-- card images section -->
@@ -27,7 +24,7 @@
         <p class="card-expiry"><span class="spn-l-nums">00</span>/<span class="spn-r-nums">00</span></p>
       </div>
       <div class="card-images ci2">
-        <img src="./images/bg-card-back.png" alt="card_back" />
+        <img src="./images/bg-card-back.png" alt="Card Back" />
       </div>
       <p class="cvc-elm">000</p>
     </div>
@@ -38,23 +35,27 @@
         <div class="field">
           <label>CARDHOLDER NAME</label>
           <input id="card-holder" type="text" name="card-holder" placeholder="Card Holder" />
+          <span id="card-holder-error" class="error-message"></span>
         </div>
         <div class="field">
           <label>CARD NUMBER</label>
-          <!-- Corrected label here -->
           <input id="card-number" type="text" name="card-number" placeholder="Card Number" />
+          <span id="card-number-error" class="error-message"></span>
         </div>
         <div class="two fields">
           <div class="field">
             <label>Exp. Date (MM/YY)</label>
             <input id="exp_Date" type="text" name="expiry-date" placeholder="MM/YY" />
+            <span id="exp_Date-error" class="error-message"></span>
           </div>
           <div class="field">
             <label>CVC</label>
-            <input id="cvc-elms"  type="text" name="cvc" placeholder="CVC" />
+            <input id="cvc-elms" type="text" name="cvc" placeholder="CVC" />
+            <span id="cvc-elms-error" class="error-message"></span>
           </div>
         </div>
         <button class="ui blue submit button" type="submit">Confirm</button>
+
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -21,19 +21,48 @@ $(document).ready(function() {
     });
 
     $('.ui.blue.submit.button').click(function(e) {
-        e.preventDefault(); // prevent the form from submitting
+        // Clear previous error messages
+        $('.error-message').text('');
+    
+        let cardHolder = $('#card-holder').val();
         let cardNumber = $('#card-number').val();
         let cvc = $('#cvc-elms').val();
-        if(cardNumber.length < 16 || cardNumber.length > 16) {
-            alert('Card number is invalid');
-        } else if (cardNumber.length == 16) {
-            alert('Card number is valid');
+        let expDate = $('#exp_Date').val();
+    
+        if(cardHolder === '') {
+            e.preventDefault(); // prevent the form from submitting
+            $('#card-holder-error').text('Card holder name is required');
+            return; // exit the function
         }
 
-        if(cvc.length < 3 || cvc.length > 3) {
-            alert('CVC is invalid');
-        } else if (cvc.length == 3) {
-            alert('CVC is valid');
+        if(cardNumber === '') {
+            e.preventDefault(); // prevent the form from submitting
+            $('#card-number-error').text('Card number is required');
+            return; // exit the function
+        } else if(cardNumber.length != 16) {
+            e.preventDefault(); // prevent the form from submitting
+            $('#card-number-error').text('Card number is invalid');
+            return; // exit the function
+        }
+    
+        if(cvc === '') {
+            e.preventDefault(); // prevent the form from submitting
+            $('#cvc-elms-error').text('CVC is required');
+            return; // exit the function
+        } else if(cvc.length != 3) {
+            e.preventDefault(); // prevent the form from submitting
+            $('#cvc-elms-error').text('CVC is invalid');
+            return; // exit the function
+        }
+    
+        if(expDate === '') {
+            e.preventDefault(); // prevent the form from submitting
+            $('#exp_Date-error').text('Expiration date is required');
+            return; // exit the function
+        } else if (!expDate.includes('/')) {
+            e.preventDefault(); // prevent the form from submitting
+            $('#exp_Date-error').text('Please include a forward slash (/) in the expiration date.');
+            return; // exit the function
         }
     });
 });
