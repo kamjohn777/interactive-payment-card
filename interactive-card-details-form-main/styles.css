@@ -180,3 +180,71 @@ body {
     color: red;
     font-size: 12px;
 }
+
+
+@media only screen and (min-width: 301px) and (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+
+    .image-content-wrap {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 100%;
+        /* height: 550px; */
+        /* height: 500px; */
+        display: flex;
+        background: red;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .gradient-wrap img {
+        /* height: 100vh; */
+        object-fit: cover;
+        height: 350px;
+        width: 100%;
+    }
+
+    .content-form-wrap {
+        /* background: red; */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 109px;
+    }
+
+    .ui.form.segment {
+        width: 100%;
+        height: 551px;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: none;
+        box-shadow: none;
+    }
+
+    .card-images.ci1 {
+        background: url(./images/bg-card-front.png) no-repeat center center;
+        background-size: cover;
+        position: relative;
+        height: 200px;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .image-content-wrap img {
+        height: 180px;
+        position: relative;
+        bottom: 0px;
+        left: -24%;
+    }
+  }

@@ -8,9 +8,17 @@
     <title>Interactive Card</title>
   </head>
   <body>
-    <div class="gradient-wrap">
+    <!-- <div class="gradient-wrap">
       <img src="./images/bg-main-desktop.png" alt="Background" />
-    </div>
+    </div> -->
+
+    <div class="gradient-wrap">
+      <picture>
+          <source media="(min-width: 300px) and (max-width: 1000px)" srcset="./images/bg-main-mobile.png">
+          <source media="(min-width: 701px)" srcset="./images/bg-main-desktop.png">
+          <img src="./images/bg-main-desktop.png" alt="Background" /> <!-- Fallback for browsers that do not support the picture element -->
+      </picture>
+  </div>
 
     <!-- card images section -->
     <div class="image-content-wrap">
